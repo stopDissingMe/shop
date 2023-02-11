@@ -1,0 +1,12 @@
+:root {
+    --dark-blue: #222222;
+}
+
+.navigation {
+    display: none;
+}
+
+.header {
+    background-color: #222222;
+}
+
