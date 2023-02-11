@@ -6,7 +6,31 @@
     display: none;
 }
 
+.container {
+    width: 1138px;
+    margin: 0 auto;
+}
+
 .header {
     background-color: #222222;
 }
 
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 75px;
+}
+
+.header__button {
+    background-color: transparent;
+    border: none;
+}
+
+.header__person-link {
+    margin: 0 34px 0 34px;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
