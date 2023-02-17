@@ -2,6 +2,7 @@
     --dark-blue: #222222;
     --dark-pink: #F16D7F;
     --pink: #F1E4E6;
+    --brown: #211616;
 }
 
 .navigation {
@@ -11,6 +12,11 @@
 .container {
     width: 1138px;
     margin: 0 auto;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
 }
 
 .header {
@@ -69,4 +75,57 @@
 
 .brand__subtitle-fashion {
    color: var(--dark-pink);
+}
+
+.offers__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offers__item {
+    width: 360px;
+    min-height: 260px;
+    background-color: var(--brown);
+    margin: 0 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.offers__item--woman {
+    background-image: url(../img/offers-woman.jpg);
+}
+
+.offers__item--man {
+    background-image: url(../img/offers-man.jpg);
+}
+
+.offers__item--kid {
+    background-image: url(../img/offers-kid.jpg);
+}
+
+.offers__item--accessories {
+    background-image: url(../img/offers-acc.jpg);
+    width: 100%;
+    min-height: 180px;
+}
+
+.offers__title {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.offers__subtitle {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: var(--dark-pink);
 }
