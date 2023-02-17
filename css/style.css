@@ -3,6 +3,9 @@
     --dark-pink: #F16D7F;
     --pink: #F1E4E6;
     --brown: #211616;
+    --grey: #9F9F9F;
+    --light-grey: #F8F8F8;
+    --dark-grey: #5D5D5D;
 }
 
 .navigation {
@@ -128,4 +131,70 @@
     line-height: 29px;
     text-transform: uppercase;
     color: var(--dark-pink);
+}
+
+.featured__offers-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 97px 0 50px;
+}
+
+.featured__topic {
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.featured__paragraph {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--grey);
+}
+
+.featured__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.featured__item {
+    background-color: var(--light-grey);
+    width: 360px;
+    min-height: 581px;
+    margin: 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.featured__title {
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 25px 0 13px 19px;
+}
+
+.featured__subtitle {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: var(--dark-grey);
+    padding-left: 18px;
+}
+
+.featured__price {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--dark-pink);
+    padding: 20px 0 20px 18px;
 }
