@@ -23,7 +23,7 @@
 }
 
 .header {
-    background-color: #222222;
+    background-color: var(--dark-blue);
 }
 
 .header__wrapper {
@@ -189,6 +189,7 @@
     line-height: 17px;
     color: var(--dark-grey);
     padding-left: 18px;
+    width: 314px;
 }
 
 .featured__price {
@@ -205,4 +206,132 @@
     min-height: 420px;
     position: absolute;
     top: 0;
+}
+
+.featured__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 49px;
+}
+
+.featured__button {
+    background-color: transparent;
+    border: none;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--dark-pink);
+    padding: 14px 35px;
+    border: 1px solid;
+}
+
+.advantages {
+    background-color: var(--dark-blue);
+    min-height: 341px;
+    margin-top: 95px;
+    display: flex;
+    align-items: center;
+}
+
+.advantages__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.advantages__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.advantages__title {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+}
+
+.advantages__subtitle {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: white;
+    display: flex;
+    text-align: center;
+    width: 300px;
+}
+
+.footer__subscription {
+    background-image: url(../img/photo\ subscribe.jpg);
+    min-height: 448px;
+    display: flex;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer__quote {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 87px 0 0 10px;
+}
+
+.footer__par {
+    font-family: Lato;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer__subscribe {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+
+.footer__for-our {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.social {
+    background-color: var(--dark-blue);
+    min-height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__controls {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: white;
 }

@@ -145,55 +145,81 @@
                     <p class="featured__price">$52.00</p>
                 </li>
             </ul>
-            <button>
-                Browse all product
-            </button>
+            <div class="featured__wrapper">
+                <button class="featured__button">
+                    Browse All Product
+                </button>
+            </div>    
         </section>
-        <section>
-            <h2>Pros</h2>
-            <ul>
-                <li>
-                    img-car
-                    <h3>Free Delivery</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph 
-                        next-generation innov tion with extensive models.
-                    </p>
-                </li>
-                <li>
-                    img-percent
-                    <h3>Sales & discounts</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph 
-                        next-generation innov tion with extensive models.
-                    </p>
-                </li>
-                <li>
-                    img-crown
-                    <h3>Quality assurance</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph 
-                        next-generation innov tion with extensive models.
-                    </p>
-                </li>
-            </ul>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="visually-hidden">Pros</h2>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <img class="advantages__icon" src="./img/car.svg" alt="car" width="45" height="32">
+                        <div class="advantages__wrapper">
+                            <h3 class="advantages__title">Free Delivery</h3>
+                            <p class="advantages__subtitle">Worldwide delivery on all. Authorit tively morph 
+                                next-generation innov tion with extensive models.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="./img/percent.svg" alt="percent" width="40" height="40">
+                        <div class="advantages__wrapper">
+                            <h3 class="advantages__title">Sales & discounts</h3>
+                            <p class="advantages__subtitle">Worldwide delivery on all. Authorit tively morph 
+                                next-generation innov tion with extensive models.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <img src="./img/crown.svg" alt="crown" width="47" height="35">
+                        <div class="advantages__wrapper">
+                            <h3 class="advantages__title">Quality assurance</h3>
+                            <p class="advantages__subtitle">Worldwide delivery on all. Authorit tively morph 
+                                next-generation innov tion with extensive models.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
-    <footer>
-        <section>
-            img-face
-            <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                 a pulvinar purus condimentum“
-            </p>
-            <h2>subscribe</h2>
-            <p>for our newletter and promotion</p>
-            <button>
-                Subscribe
-            </button>
+    <footer class="footer">
+        <section class="footer__subscription">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__quote">
+                        <img src="./img/face.png" alt="face" width="96" height="96">
+                        <p class="footer__par">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            a pulvinar purus condimentum“
+                        </p>
+                    </div>
+                    <div class="footer__quote">
+                        <h2 class="footer__subscribe">subscribe</h2>
+                        <p class="footer__for-our" >for our newletter and promotion</p>
+                        <button>
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            &copy;
-            img-facebook
-            img-inst
-            img-pinterest
-            img-twitter
+        <section class="social">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__controls">
+                        &copy; 2023  Brand  All Rights Reserved.
+                    </div>
+                    <div class="footer__controls">
+                        <img src="./img/facebook.svg" alt="facebook" width="32" height="32">
+                        <img src="./img/inst.svg" alt="inst" width="32" height="32">
+                        <img src="./img/pinterest.svg" alt="pinterest" width="32" height="32">
+                        <img src="./img/twitter.svg" alt="twitter" width="32" height="32">
+                    </div>
+                </div>
+            </div>
         </section>
     </footer>
 </body>
