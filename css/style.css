@@ -6,6 +6,7 @@
     --grey: #9F9F9F;
     --light-grey: #F8F8F8;
     --dark-grey: #5D5D5D;
+    --bright-grey: #A4A4A4;
 }
 
 .navigation {
@@ -334,4 +335,130 @@
     font-weight: 400;
     line-height: 19px;
     color: white;
+}
+
+.banner {
+    background-color: var(--pink);
+    height: 148px;
+    display: flex;
+    align-items: center;
+}
+
+.banner__title {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: var(--dark-pink);
+    text-transform: uppercase;
+}
+
+.user-info {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info__legend {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+.name {
+    display: block;
+    width: 359px;
+    height: 44px;
+    margin: 21px 0 21px 0;
+    border: var(--bright-grey) 1px solid;
+    padding-left: 17px;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+::-webkit-input-placeholder {
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+.sex-label {
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+}
+
+.user-info__fieldset {
+    margin-bottom: 31px;
+}
+
+.user-info__notice {
+    width: 350px;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    color: var(--bright-grey);
+}
+
+.user-info__button {
+    width: 167px;
+    height: 50px;
+    background-color: var(--dark-pink);
+    display: flex;
+    align-items: center;
+    margin: 39px 0 96px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.user-info__join {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--pink);
+    text-transform: uppercase;
+    margin-left: 29px;
+}
+
+.user-info__title {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.user-info__subtitle {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    width: 652px;
+    margin-top: 21px;
+}
+
+.user-info__item {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin: 16px 0 0 43px;
+    position: relative;
+}
+
+.user-info__item:before {
+    content: '';
+    width: 20px;
+    height: 16px;
+    background-image: url(../img/Vector.png);
+    position: absolute;
+    left: -40px;
+    top: 5px;
 }
