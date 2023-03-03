@@ -16,7 +16,7 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__controls">
-                    <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                   <a href="./index.html"><img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38"></a>
                     <img src="./img/loupe.svg" alt="loupe" width="27" height="27">
                 </div>
                 <div class="header__controls">
@@ -24,7 +24,7 @@
                         <img src="./img/menu.svg" alt="menu" width="32" height="23">
                     </button>
                     <a href="./reg.html"><img class="header__person-link" src="./img/person.svg" alt="person" width="29" height="29"></a>
-                    <a href="#"><img src="./img/cart.svg" alt="cart" width="32" height="29"></a>
+                    <a href="#"><img src="./img/cart.png" alt="cart" width="32" height="29"></a>
                 </div>
             </div>
         </div>  
@@ -40,8 +40,8 @@
                 <form action="" method="post">
                 <fieldset class="user-info__fieldset">
                     <legend class="user-info__legend">Your Name</legend>
-                    <input class="name" type="firstName" id="firstName" placeholder="First Name">
-                    <input class="name" type="lastName" id="lastName" placeholder="Last Name">
+                    <input class="name" type="text" id="firstName" placeholder="First Name">
+                    <input class="name" type="text" id="lastName" placeholder="Last Name">
                     <input class="sex" type="radio" id="sexChoice1" name="sex" value="female">
                     <label class="sex-label" for="sexChoice1">Male</label>
                     <input class="radio-input" type="radio" id="sexChoice2" name="sex" value="male">
@@ -84,9 +84,12 @@
                     <div class="footer__quote">
                         <h2 class="footer__subscribe">subscribe</h2>
                         <p class="footer__for-our" >for our newletter and promotion</p>
-                        <button>
-                            Subscribe
-                        </button>
+                        <form action="" method="post" class="footer__form">
+                            <input class="footer__email" type="text" id="email" placeholder="Enter your email" required>
+                            <button class="footer__button" type="submit">
+                                Subscribe
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
