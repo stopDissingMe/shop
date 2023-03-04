@@ -1,0 +1,58 @@
+.brand {
+    display: flex;
+    margin: 0 0 63px;
+    position: relative;
+
+    .wrp {
+        position: absolute;
+        width: 100%;
+        height: 765px;
+        background-color: $unknown-color;
+        opacity: 0.86;
+        top: 100%;
+        transform: translate(0,-100%);
+        display: none;
+    }
+
+    .display-block {
+        display: block;
+    }  
+    
+    &__title-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 91px;
+        background-color: $pink;
+        width: 50%;
+        position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 64px;
+                top: 340px;
+                height: 92px;
+                width: 12px;
+                background-color: $dark-pink;
+            }
+    }
+    
+    &__title {
+        @include font(24px, 58px, 900);
+        text-transform: uppercase;
+        align-items: center;
+    }
+    
+    &__subtitle {
+        display: block;
+        @include font(32px, 38px, 700);
+    }
+    
+    &__subtitle-fashion {
+       color: $dark-pink;
+    }
+    
+}
+
+
+

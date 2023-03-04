@@ -1,0 +1,106 @@
+.footer {
+    &__subscription {
+        background-image: url(../img/photo\ subscribe.jpg);
+        min-height: 448px;
+        display: flex;
+    }
+    
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    &__quote {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 87px 0 0 10px;
+    }
+    
+    &__par {
+        @include font(20px, 24px, 400, italic);
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    &__subscribe {
+        @include font(24px, 38px, 700);
+        text-transform: uppercase;
+    }
+    
+    &__for-our {
+       @include font(18px, 30px);
+        text-transform: uppercase;
+    }
+    
+    &__form {
+        display: flex;
+        position: relative;
+    }
+    
+    &__email {
+        width: 322px;
+        height: 49px;
+        border: 1px solid;
+        border-color: $soft-grey;
+        border-radius: 50px;
+        color: $black;
+        background-color: $soft-grey;
+        padding-left: 22px;
+    }
+    
+    &__button {
+        position: absolute;
+        right: 0;
+        border: 1px solid;
+        border-color: $dark-pink;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-color: $dark-pink;
+        color: $soft-grey;
+        @include font(14px, 17px);
+        height: 100%;
+        width: 100px;
+        cursor: pointer;
+    }
+    
+    &__social {
+        background-color: $dark-blue;
+        min-height: 89px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__controls {
+        @include font(16px, 19px);
+        color: $soft-grey;
+    }
+    
+    &__social-item {
+        position: relative;
+        cursor: pointer;
+    
+        &:before {
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: $dark-pink;
+            display: none;
+        }
+
+        &:hover:before {
+            display: block;
+        }
+    } 
+}
+
