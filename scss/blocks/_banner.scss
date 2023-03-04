@@ -1,0 +1,14 @@
+.banner {
+    background-color: $pink;
+    height: 148px;
+    display: flex;
+    align-items: center;
+
+    &__title {
+        @include font(24px, 29px);
+        color: $dark-pink;
+        text-transform: uppercase;
+    }
+}
+
+

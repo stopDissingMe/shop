@@ -1,0 +1,79 @@
+.user-info {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+
+    &__legend {
+        @include font(16px, 19px, 300);
+    }
+    
+    &__name {
+        display: block;
+        width: 359px;
+        height: 44px;
+        margin: 21px 0 21px 0;
+        border: $bright-grey 1px solid;
+        padding-left: 17px;
+        @include font(13px, 16px, 300);
+    }
+    
+    &__sex-label {
+        @include font(11px, 13px, 300);
+    }
+    
+    &__fieldset {
+        margin-bottom: 31px;
+    }
+    
+    &__notice {
+        width: 350px;
+        @include font(13px, 16px, 300);
+        color: $bright-grey;
+    }
+    
+    &__button {
+        width: 167px;
+        height: 50px;
+        background-color: $dark-pink;
+        display: flex;
+        align-items: center;
+        margin: 39px 0 96px 0;
+        border: none;
+        cursor: pointer;
+    }
+    
+    &__join {
+        @include font(14px, 17px);
+        color: $pink;
+        text-transform: uppercase;
+        margin-left: 29px;
+    }
+    
+    &__title {
+       @include font(24px, 29px, 300);
+        text-transform: uppercase;
+    }
+    
+    &__subtitle {
+        @include font(24px, 29px, 300);
+        width: 652px;
+        margin-top: 21px;
+    }
+    
+    &__item {
+        @include font(24px, 29px, 300);
+        margin: 16px 0 0 43px;
+        position: relative;
+    
+        &:before {
+            content: '';
+            width: 20px;
+            height: 16px;
+            background-image: url(../img/Vector.png);
+            position: absolute;
+            left: -40px;
+            top: 5px;
+        }
+    }
+}
+
