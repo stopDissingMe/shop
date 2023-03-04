@@ -1,0 +1,122 @@
+.purchase {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 96px;
+    flex-wrap: wrap;
+
+    &__item {
+        margin-bottom: 40px;
+        width: 652px;
+        height: 306px;
+        display: flex;
+        background-color: $light-grey;
+        filter: drop-shadow(19px 17px 24px rgba(0, 0, 0, 0.13));
+    }
+
+    &__text-wrapper {
+        margin: 20px 0 62px 31px; 
+    }
+
+    &__title {
+        @include font(24px, 29px);
+        text-transform: uppercase;
+        padding-bottom: 42px;
+    }
+
+    &__subtitle {
+        @include font(22px, 26px);
+        color: $midnight-grey;
+        padding-bottom: 6px;
+    }
+
+    &__par {
+        @include font(22px, 26px);
+        color: $midday-grey;
+    }
+
+    &__price {
+        color: $dark-pink;
+    }
+
+    &__number {
+        width: 43px;
+        height: 24px;
+        border: 1px solid $bright-grey;
+        outline: none;
+        margin-left: 12px;
+        text-align: center;
+        @include font(18px, 21px);
+        color: $midday-grey;
+    }
+
+    &__button {
+        width: 100px;
+        height: 34px;
+        border: 1px solid $bright-grey;
+        background-color: transparent;
+        text-transform: uppercase;
+        @include font(11px, 13px, 300);
+        color:$bright-grey;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    &__total {
+        width: 350px;
+        height: 214px;
+        background-color: $light-grey;
+        margin-top: 57px;
+    }
+
+    &__total-wrapper {
+        padding: 39px 0 0 154px;
+    }
+
+    &__total-sub {
+        @include font(11px, 13px);
+        color: $strange-grey;
+        text-transform: uppercase;
+        padding-left: 30px;
+    }
+
+    &__total-price {
+        padding-left: 30px;
+    }
+
+    &__total-grand {
+        @include font(16px, 19px, 300);
+        color: $strange-grey;
+        text-transform: uppercase;
+        padding: 12px 0 39px 0;
+    }
+
+    &__total-dollar {
+        @include font(16px, 19px, 700);
+        color: $dark-pink;
+    }
+
+    &__total-button {
+        width: 274px;
+        height: 50px;
+        background-color: $dark-pink;
+        font-family: Lato;
+        @include font(16px, 19px, 300);
+        color: $light-grey;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        margin: 0 43px 42px 44px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: $soft-grey;
+            top: -17px;
+            left: 0;
+        }
+    }
+}

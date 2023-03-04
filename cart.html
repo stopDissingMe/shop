@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__controls">
+                   <a href="./index.html"><img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38"></a>
+                    <img src="./img/loupe.svg" alt="loupe" width="27" height="27">
+                </div>
+                <div class="header__controls">
+                    <button class="header__button">
+                        <img src="./img/menu.svg" alt="menu" width="32" height="23">
+                    </button>
+                    <a href="./reg.html"><img class="header__person-link" src="./img/person.svg" alt="person" width="29" height="29"></a>
+                    <a href="#"><img src="./img/cart2.svg" alt="cart" width="32" height="29"></a>
+                </div>
+            </div>
+        </div>  
+    </header>
+   <main>
+        <section class="banner">
+            <div class="container">
+                <h1 class="banner__title">shopping cart</h1>
+            </div>
+        </section>
+        <section class="purchase container">
+            <div class="purchase__list-wrapper">
+                <ul class="purchase__list">
+                    <li class="purchase__item"><img src="./img/purchase2.jpg" alt="man" width="262" height="306">
+                        <div class="purchase__text-wrapper">
+                            <h2 class="purchase__title">mango  people  t-shirt</h2>
+                            <p class="purchase__subtitle">Price: <span class="purchase__price"> $300</span></p>
+                            <p class="purchase__subtitle">Color: <span class="purchase__par">Red</span></p>
+                            <p class="purchase__subtitle">Size: <span class="purchase__par">XL</span></p>
+                            <p class="purchase__subtitle">Quantity: <input type="text" class="purchase__number" id="purchase__amount"></p>
+                        </div>
+                    </li>
+                    <li class="purchase__item"><img src="./img/purchase1.jpg" alt="man" width="262" height="306">
+                        <div class="purchase__text-wrapper">
+                            <h2 class="purchase__title">mango  people  t-shirt</h2>
+                            <p class="purchase__subtitle">Price: <span class="purchase__price"> $300</span></p>
+                            <p class="purchase__subtitle">Color: <span class="purchase__par">Red</span></p>
+                            <p class="purchase__subtitle">Size: <span class="purchase__par">XL</span></p>
+                            <p class="purchase__subtitle">Quantity: <input type="text" class="purchase__number" id="purchase__amount"></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="user-info__collumn">
+                <form action="" method="post">
+                    <fieldset class="user-info__fieldset">
+                        <legend class="user-info__legend">SHIPPING ADRESS</legend>
+                        <input class="user-info__name" type="text" id="firstName" placeholder="Country">
+                        <input class="user-info__name" type="text" id="lastName" placeholder="State">
+                        <input class="user-info__name" type="text" id="lastName" placeholder="Postcode / Zip">
+                        <button class="purchase__button">get a quote</button>
+                    </fieldset>
+                </form>
+                <div class="purchase__total">
+                    <div class="purchase__total-wrapper">
+                        <p class="purchase__total-sub">sub total <span class="purchase__total-price">$900</span></p>
+                        <p class="purchase__total-grand">grand total <span class="purchase__total-dollar">$900</span></p>
+                    </div>
+                    <button type="button" class="purchase__total-button">proceed to checkout</button>
+                </div>
+            </div>
+            
+        </section>
+   </main>
+   <footer class="footer">
+    <section class="footer__subscription">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__quote">
+                    <img src="./img/face.png" alt="face" width="96" height="96">
+                    <p class="footer__par">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        a pulvinar purus condimentum“
+                    </p>
+                </div>
+                <div class="footer__quote">
+                    <h2 class="footer__subscribe">subscribe</h2>
+                    <p class="footer__for-our" >for our newletter and promotion</p>
+                    <form action="" method="post" class="footer__form">
+                        <input class="footer__email" type="text" id="email" placeholder="Enter your email" required>
+                        <button class="footer__button" type="submit">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer__social">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__controls">
+                    &copy; 2023  Brand  All Rights Reserved.
+                </div>
+                <div class="footer__controls">
+                    <img class="footer__social-item" src="./img/facebook.svg" alt="facebook" width="32" height="32">
+                    <img class="footer__social-item" src="./img/inst.svg" alt="inst" width="32" height="32">
+                    <img class="footer__social-item" src="./img/pinterest.svg" alt="pinterest" width="32" height="32">
+                    <img class="footer__social-item" src="./img/twitter.svg" alt="twitter" width="32" height="32">
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+</body>
+</html>
