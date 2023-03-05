@@ -3,6 +3,10 @@
     margin: 0 0 63px;
     position: relative;
 
+    @include tablet {
+        margin-bottom: 19px;
+    }
+
     .wrp {
         position: absolute;
         width: 100%;
@@ -18,34 +22,47 @@
         display: block;
     }  
     
+    &__img {
+        width: 50%;
+        height: auto;
+    }
+
     &__title-wrapper {
         display: flex;
         align-items: center;
         padding: 0 0 0 91px;
         background-color: $pink;
         width: 50%;
-        position: relative;
-
-            &:before {
-                content: '';
-                position: absolute;
-                left: 64px;
-                top: 340px;
-                height: 92px;
-                width: 12px;
-                background-color: $dark-pink;
-            }
     }
     
     &__title {
-        @include font(24px, 58px, 900);
+        @include font(48px, 58px, 900);
         text-transform: uppercase;
         align-items: center;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 0;
+            height: 92px;
+            width: 12px;
+            background-color: $dark-pink;
+        }
+
+        @include tablet {
+            @include font(44px, 53px, 900)
+        }
     }
     
     &__subtitle {
         display: block;
         @include font(32px, 38px, 700);
+
+        @include tablet {
+            @include font(24px, 29px, 700)
+        }
     }
     
     &__subtitle-fashion {

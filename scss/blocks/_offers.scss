@@ -7,12 +7,19 @@
     }
     
     &__item {
-        width: 360px;
+        width: 32%;
         min-height: 260px;
         background-color: $brown;
+        background-size: cover;
         margin: 0 0 30px;
         @include flex-center;
         flex-direction: column;
+
+        @include tablet {
+            width: 31%;
+            min-height: 167px;
+            margin: 0 0 19px;
+        }
     }
     
     &__item--woman {
@@ -31,6 +38,10 @@
         background-image: url(../img/offers-acc.jpg);
         width: 100%;
         min-height: 180px;
+
+        @include tablet {
+            min-height: 116px;
+        }
     }
     
     &__title {
