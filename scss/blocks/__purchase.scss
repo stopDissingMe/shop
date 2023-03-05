@@ -69,14 +69,14 @@
     }
 
     &__total-wrapper {
-        padding: 39px 0 0 154px;
+        padding: 39px 0 0 124px;
     }
 
     &__total-sub {
         @include font(11px, 13px);
         color: $strange-grey;
         text-transform: uppercase;
-        padding-left: 30px;
+        padding-left: 60px;
     }
 
     &__total-price {
@@ -93,6 +93,7 @@
     &__total-dollar {
         @include font(16px, 19px, 700);
         color: $dark-pink;
+        padding-left: 30px;
     }
 
     &__total-button {
