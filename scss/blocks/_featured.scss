@@ -23,33 +23,45 @@
     
     &__item {
         background-color: $light-grey;
-        width: 360px;
-        min-height: 581px;
+        width: 31%;
+        min-height: auto;
         margin: 0 0 30px;
+
+        @include tablet {
+            margin: 0 0 18px 0;
+            width: 49%;
+            min-height: auto;
+        }
     }
     
     &__item-img--1 {
         background-image: url(../img/offers-1.jpg);
+        background-size: cover;
     }
     
     &__item-img--2 {
         background-image: url(../img/offers-2.jpg);
+        background-size: cover;
     }
     
     &__item-img--3 {
         background-image: url(../img/offers-3.jpg);
+        background-size: cover;
     }
     
     &__item-img--4 {
         background-image: url(../img/offers-4.jpg);
+        background-size: cover;
     }
     
     &__item-img--5 {
         background-image: url(../img/offers-5.jpg);
+        background-size: cover;
     }
     
     &__item-img--6 {
         background-image: url(../img/offers-6.jpg);
+        background-size: cover;
     }
     
     &__wrapper-item {
@@ -140,6 +152,11 @@
         display: flex;
         justify-content: center;
         margin-top: 49px;
+
+
+        @include tablet {
+            margin: 32px 0 65px 0;
+        }
     }
     
     &__link {
@@ -152,6 +169,7 @@
         text-decoration: none;
         position: relative;
         z-index: 2;
+        margin-bottom: 96px;
     
         &:before {
             content:'';
