@@ -3,14 +3,30 @@
         background-image: url(../img/photo\ subscribe.jpg);
         min-height: 448px;
         display: flex;
+
+        @include tablet {
+            min-height: 768px;
+            background-size: cover;
+        }
     }
     
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
+        @include tablet {
+            flex-direction: column;
+            margin: 60px 0 140px 0;
+            align-items: center;
+        }
     }
-    
+
+    &__wrapper-social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }   
     
     &__quote {
         width: 360px;
@@ -18,7 +34,11 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        margin: 87px 0 0 10px;
+
+        @include tablet {
+            padding-bottom: 48px;
+        }
+       
     }
     
     &__par {
@@ -37,6 +57,7 @@
     &__for-our {
        @include font(18px, 30px);
         text-transform: uppercase;
+        padding-bottom: 32px;
     }
     
     &__form {

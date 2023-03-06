@@ -1,25 +1,29 @@
 .advantages {
     background-color: $dark-blue;
     min-height: 341px;
-    margin-top: 95px;
     display: flex;
     align-items: center;
 
     &__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+            min-height: 768px;
+            flex-direction: column;
+        }
     }
     
     &__item {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    &__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+       text-align: center;
+       width: 27%;
+       padding-right: 30px;
+       
+       @include tablet {
+        margin-bottom: 48px;
+        width: 300px;
+       }
     }
     
     &__title {
@@ -28,11 +32,9 @@
         padding: 28px 0 16px 0;
     }
     
-    .advantages__subtitle {
+    &__subtitle {
         @include font(14px, 17px, 300);
         color: $soft-grey;
-        display: flex;
-        text-align: center;
 
     }
 }
