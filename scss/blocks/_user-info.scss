@@ -52,12 +52,19 @@
     &__title {
        @include font(24px, 29px, 300);
         text-transform: uppercase;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
     }
     
     &__subtitle {
         @include font(24px, 29px, 300);
-        width: 652px;
         margin-top: 21px;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
     }
     
     &__item {
