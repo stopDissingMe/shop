@@ -20,6 +20,12 @@
             min-height: 167px;
             margin: 0 0 19px;
         }
+
+        @include mobile {
+            width: 100%;
+            min-height: 247px;
+            margin-bottom: 32px;
+        }
     }
     
     &__item--woman {
