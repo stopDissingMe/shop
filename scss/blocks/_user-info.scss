@@ -3,6 +3,14 @@
     display: flex;
     justify-content: space-between;
 
+
+    &__collumn {
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
     &__legend {
         @include font(16px, 19px, 300);
     }
@@ -48,6 +56,14 @@
         text-transform: uppercase;
         margin-left: 29px;
     }
+
+    &__list {
+        margin-left: 128px;
+
+        @include tablet {
+            margin-left: 23px;
+        }
+    }
     
     &__title {
        @include font(24px, 29px, 300);
@@ -71,6 +87,11 @@
         @include font(24px, 29px, 300);
         margin: 16px 0 0 43px;
         position: relative;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
+        
     
         &:before {
             content: '';
@@ -80,6 +101,11 @@
             position: absolute;
             left: -40px;
             top: 5px;
+
+            @include tablet {
+                left: -30px;
+                top: 3px;
+            }
         }
     }
 }

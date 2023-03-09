@@ -16,24 +16,58 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__controls">
-                   <a href="./index.html"><img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38"></a>
+                    <a href="./index.html"><img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38"></a>
                     <img src="./img/loupe.svg" alt="loupe" width="27" height="27">
                 </div>
                 <div class="header__controls">
-                    <button class="header__button">
+                    <button class="header__button" id="burger">
                         <img src="./img/menu.svg" alt="menu" width="32" height="23">
                     </button>
                     <a href="./reg.html"><img class="header__person-link" src="./img/person.svg" alt="person" width="29" height="29"></a>
-                    <a href="#"><img src="./img/cart2.svg" alt="cart" width="32" height="29"></a>
+                    <a href="./cart.html"><img src="./img/cart2.svg" alt="cart" width="32" height="29"></a>
                 </div>
             </div>
         </div>  
+        <nav class="header__navigation" id="menu">
+            <h2 class="header__navigation-title">menu</h2>
+            <ul class="header__list">
+                <li class="header__link">
+                    <h3 class="header__navigation-subtitile">man</h3>
+                    <ul>
+                        <li class="header__item"><a class="header__item" href="#">Accessories</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Bags</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Denim</a></li>
+                        <li class="header__item"><a class="header__item" href="#">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="header__navigation-subtitile">woman</h3>
+                    <ul>
+                        <li class="header__item"><a class="header__item" href="#">Accessories</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Jackets & Coats</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Polos</a></li>
+                        <li class="header__item"><a class="header__item" href="#">T-Shirts</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Shirts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="header__navigation-subtitile">kids</h3>
+                        <li class="header__item"><a class="header__item" href="#">Accessories</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Jackets & Coats</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Polos</a></li>
+                        <li class="header__item"><a class="header__item" href="#">T-Shirts</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Shirts</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Bags</a></li>
+                </li>
+            </ul>
+        </nav>
     </header>
    <main>
         <section class="banner">
             <div class="container">
                 <h1 class="banner__title">shopping cart</h1>
             </div>
+            <div class="wrp" id="wrp"></div>
         </section>
         <section class="purchase container">
             <div class="purchase__list-wrapper">
@@ -80,43 +114,42 @@
         </section>
    </main>
    <footer class="footer">
-    <section class="footer__subscription">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__quote">
-                    <img src="./img/face.png" alt="face" width="96" height="96">
-                    <p class="footer__par">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                        a pulvinar purus condimentum“
-                    </p>
+        <section class="footer__subscription">
+                <div class="footer__wrapper container">
+                    <div class="footer__quote">
+                        <img src="./img/face.png" alt="face" width="96" height="96">
+                        <p class="footer__par">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            a pulvinar purus condimentum“
+                        </p>
+                    </div>
+                    <div class="footer__quote">
+                        <h2 class="footer__subscribe">subscribe</h2>
+                        <p class="footer__for-our" >for our newletter and promotion</p>
+                        <form action="" method="post" class="footer__form">
+                            <input class="footer__email" type="text" id="email" placeholder="Enter your email" required>
+                            <button class="footer__button" type="submit">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
                 </div>
-                <div class="footer__quote">
-                    <h2 class="footer__subscribe">subscribe</h2>
-                    <p class="footer__for-our" >for our newletter and promotion</p>
-                    <form action="" method="post" class="footer__form">
-                        <input class="footer__email" type="text" id="email" placeholder="Enter your email" required>
-                        <button class="footer__button" type="submit">
-                            Subscribe
-                        </button>
-                    </form>
+        </section>
+        <section class="footer__social">
+            <div class="container">
+                <div class="footer__wrapper-social">
+                    <div class="footer__controls">
+                        &copy; 2023  Brand  All Rights Reserved.
+                    </div>
+                    <div class="footer__controls">
+                        <img class="footer__social-item" src="./img/facebook.svg" alt="facebook" width="32" height="32">
+                        <img class="footer__social-item" src="./img/inst.svg" alt="inst" width="32" height="32">
+                        <img class="footer__social-item" src="./img/pinterest.svg" alt="pinterest" width="32" height="32">
+                        <img class="footer__social-item" src="./img/twitter.svg" alt="twitter" width="32" height="32">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="footer__social">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__controls">
-                    &copy; 2023  Brand  All Rights Reserved.
-                </div>
-                <div class="footer__controls">
-                    <img class="footer__social-item" src="./img/facebook.svg" alt="facebook" width="32" height="32">
-                    <img class="footer__social-item" src="./img/inst.svg" alt="inst" width="32" height="32">
-                    <img class="footer__social-item" src="./img/pinterest.svg" alt="pinterest" width="32" height="32">
-                    <img class="footer__social-item" src="./img/twitter.svg" alt="twitter" width="32" height="32">
-                </div>
-            </div>
-        </div>
-    </section>
-</footer>
+        </section>
+    </footer>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
