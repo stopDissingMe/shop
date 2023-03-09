@@ -17,6 +17,16 @@
     
     &__person-link {
         margin: 0 34px 0 34px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__cart-link {
+        @include mobile {
+            display: none;
+        }
     }
     
     &__logo {

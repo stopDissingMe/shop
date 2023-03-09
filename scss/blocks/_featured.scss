@@ -4,6 +4,10 @@
         @include flex-center;
         flex-direction: column;
         margin: 97px 0 50px;
+
+       @include mobile {
+        margin: 32px 0 64px 0;
+       }
     }
     
     &__topic {
@@ -31,6 +35,11 @@
             margin: 0 0 18px 0;
             width: 49%;
             min-height: auto;
+        }
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 16px;
         }
     }
     

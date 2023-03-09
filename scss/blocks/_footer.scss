@@ -8,6 +8,10 @@
             min-height: 768px;
             background-size: cover;
         }
+
+        @include mobile {
+            min-height: 550px;
+        }
     }
     
     &__wrapper {
@@ -26,6 +30,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include mobile {
+            flex-direction: column-reverse;
+            margin-bottom: 9px;
+        }
     }   
     
     &__quote {
@@ -102,6 +111,10 @@
     &__controls {
         @include font(16px, 19px);
         color: $soft-grey;
+
+        @include mobile {
+            margin-top: 40px;
+        }
     }
     
     &__social-item {

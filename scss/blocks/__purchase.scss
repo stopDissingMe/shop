@@ -20,6 +20,10 @@
             width: 100%;
             margin-bottom: 40px;
         }
+
+        @include mobile {
+            height: 188px;
+        }
     }
 
     &__text-wrapper {
@@ -28,23 +32,40 @@
         @include tablet {
             width: 262px;
         }
+
+        @include mobile {
+            margin: 13px 0 17px 17px; 
+        }
     }
 
     &__title {
         @include font(24px, 29px);
         text-transform: uppercase;
         padding-bottom: 42px;
+
+        @include mobile {
+            @include font(16px, 19px);
+            padding: 0 60px 26px 0;
+        }
     }
 
     &__subtitle {
         @include font(22px, 26px);
         color: $midnight-grey;
         padding-bottom: 6px;
+
+        @include mobile {
+            @include font(14px, 16px);
+        }
     }
 
     &__par {
         @include font(22px, 26px);
         color: $midday-grey;
+
+        @include mobile {
+            @include font(14px, 16px);
+        }
     }
 
     &__price {
@@ -82,6 +103,11 @@
 
         @include tablet {
             margin-top: 40px;
+        }
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 96px;
         }
     }
 
@@ -135,6 +161,13 @@
             background-color: $soft-grey;
             top: -17px;
             left: 0;
+        }
+    }
+
+    &__img {
+        @include mobile {
+            width: 40%;
+            height: 100%;
         }
     }
 }

@@ -11,6 +11,10 @@
         text-transform: uppercase;
     }
 
+    @include mobile {
+        text-align: center;
+    }
+
     .wrp {
         position: absolute;
         width: 100%;
