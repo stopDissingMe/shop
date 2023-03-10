@@ -1,0 +1,35 @@
+ul.breadcrumb {
+    list-style: none;
+    
+  }
+
+  .breadcrumb__active {
+    @include font(14px, 17px, 700);
+    color: $dark-pink;
+  }
+
+  ul.breadcrumb li {
+    display: inline;
+    @include font(14px, 17px, 300);
+    color: $dark-pink;
+    text-transform: uppercase;
+  }
+
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: $dark-grey;
+    content: "/\00a0";
+  }
+
+  ul.breadcrumb li a {
+    color: $dark-grey;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  ul.breadcrumb li a:hover {
+    text-decoration: none;
+    color: $black;
+  }
+
+ 

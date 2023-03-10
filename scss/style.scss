@@ -1,5 +1,6 @@
 @import './reset';
 @import './variables';
+@import './fonts';
 @import './mixins';
 @import './general';
 @import './blocks/header';
@@ -11,3 +12,6 @@
 @import './blocks/banner';
 @import './blocks/user-info';
 @import './blocks/_purchase';
+@import './blocks/breadcrumb';
+@import './bootstrap';
+@import './blocks/collection';

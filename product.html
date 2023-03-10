@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__controls">
+                    <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                    <img src="./img/loupe.svg" alt="loupe" width="27" height="27">
+                </div>
+                <div class="header__controls">
+                    <button class="header__button" id="burger">
+                        <img src="./img/menu.svg" alt="menu" width="32" height="23">
+                    </button>
+                    <a class="header__person-link" href="./reg.html"><img class="header__person-link" src="./img/person.svg" alt="person" width="29" height="29"></a>
+                    <a class="header__cart-link" href="./cart.html"><img src="./img/cart2.svg" alt="cart" width="32" height="29"></a>
+                </div>
+            </div>
+        </div>  
+        <nav class="header__navigation" id="menu">
+            <h2 class="header__navigation-title">menu</h2>
+            <ul class="header__list">
+                <li class="header__link">
+                    <h3 class="header__navigation-subtitile">man</h3>
+                    <ul>
+                        <li class="header__item"><a class="header__item" href="#">Accessories</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Bags</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Denim</a></li>
+                        <li class="header__item"><a class="header__item" href="#">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="header__navigation-subtitile">woman</h3>
+                    <ul>
+                        <li class="header__item"><a class="header__item" href="#">Accessories</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Jackets & Coats</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Polos</a></li>
+                        <li class="header__item"><a class="header__item" href="#">T-Shirts</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Shirts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="header__navigation-subtitile">kids</h3>
+                        <li class="header__item"><a class="header__item" href="#">Accessories</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Jackets & Coats</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Polos</a></li>
+                        <li class="header__item"><a class="header__item" href="#">T-Shirts</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Shirts</a></li>
+                        <li class="header__item"><a class="header__item" href="#">Bags</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <h1 class="banner__title">new arrivals </h1>
+            </div>
+            <div class="wrp" id="wrp"></div>
+        </section>
+        <section class="slider">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/Image Slide.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/Image Slide.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/Image Slide.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                    <i class="fa-sharp fa-solid fa-angle-left fs-50"></i>
+                <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                    <i class="fa-sharp fa-solid fa-angle-right fs-50"></i>
+                <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </section>
+        <section class="collection container">
+            <h2 class="collection__title">women collection</h2>
+            <h3 class="collection__subtitle">moschino cheap and chic</h3>
+            <p class="collection__paragraph">Compellingly actualize fully researched processes before proactive outsourcing. <span class="collection__par-next">Syndicate collaborative architectures before cutting-edge services. Completely<span class="collection__par-next"> visualize parallel core competencies rather than exceptional portals.</span></span></p>
+            <p class="collection__price">$561</p>
+        </section>
+    </main>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>

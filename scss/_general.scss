@@ -1,5 +1,5 @@
 body {
-    font-family: Lato;
+    font-family: 'lato', 'Arial', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -21,4 +21,15 @@ body {
     font-size: 13px;
     font-weight: 300;
     line-height: 16px;
+}
+
+.fs-50 {
+    font-size: 50px;
+    color: $black;
+    padding: 12px 20px;
+    background-color: $bright-grey;
+}
+
+.fa-solid:hover {
+    color: $dark-pink;
 }

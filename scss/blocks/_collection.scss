@@ -1,0 +1,53 @@
+.collection {
+    width: 100%;
+    border: 1px solid $bright-grey;
+    min-height: 601px;
+    margin-top: -65px;
+    background-color: $white;
+    position: relative;
+    text-align: center;
+
+    &__title {
+        @include font(14px, 17px, 300);
+        text-transform: uppercase;
+        color: $dark-pink;
+        padding-top: 65px;
+        position: relative;
+
+        &:before {
+            content: '';
+            background-color: $dark-pink;
+            width: 63px;
+            height: 3px;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+
+    &__subtitle {
+        @include font(18px, 22px, 300);
+        color: $midnight-grey;
+        text-transform: uppercase;
+        padding-top: 25px;
+    }
+
+    &__paragraph {
+        @include font(14px, 17px, 300);
+        color: $midday-grey;
+        width: 51%;
+        margin: 0 293px;
+        padding-top: 49px;
+    }
+
+    &__par-next {
+        display: block;
+    }
+
+    &__price {
+        @include font(24px, 28px, 300);
+        color: $dark-pink;
+        padding-top: 33px;
+    }
+}
