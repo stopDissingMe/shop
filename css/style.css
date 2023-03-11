@@ -148,6 +148,25 @@ body {
   color: #F16D7F;
 }
 
+.form-color {
+  width: 145px !important;
+  margin: 0 50px 0 50px;
+}
+
+.form-color-2 {
+  width: 125px !important;
+  margin-right: 50px;
+}
+
+.collection__list {
+  justify-content: space-between;
+}
+
+.collection__item {
+  min-height: 581px;
+  background-color: #F8F8F8;
+}
+
 .header {
   background-color: #222222;
   position: relative;
@@ -2980,7 +2999,7 @@ progress {
   }
   .col-xxl-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 31%;
   }
   .col-xxl-5 {
     flex: 0 0 auto;
@@ -3575,8 +3594,8 @@ textarea.form-control-lg {
 .form-select {
   --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   display: block;
-  width: 100%;
-  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  width: 100px;
+  padding: 0;
   -moz-padding-start: calc(0.75rem - 3px);
   font-size: 1rem;
   font-weight: 400;
@@ -3585,14 +3604,14 @@ textarea.form-control-lg {
   background-color: var(--bs-form-control-bg);
   background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
   background-repeat: no-repeat;
-  background-position: right 0.75rem center;
+  background-position: right 0 center;
   background-size: 16px 12px;
-  border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: 0.375rem;
+  border: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  text-transform: uppercase;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -13341,9 +13360,10 @@ textarea.form-control-lg {
 
 .collection {
   width: 100%;
-  border: 1px solid #A4A4A4;
+  border: 1px solid #9F9F9F;
   min-height: 601px;
   margin-top: -65px;
+  margin-bottom: 128px;
   background-color: #FFF;
   position: relative;
   text-align: center;
@@ -13357,6 +13377,7 @@ textarea.form-control-lg {
   color: #F16D7F;
   padding-top: 65px;
   position: relative;
+  margin-left: 60px;
 }
 .collection__title:before {
   content: "";
@@ -13376,6 +13397,7 @@ textarea.form-control-lg {
   color: #575757;
   text-transform: uppercase;
   padding-top: 25px;
+  margin-left: 60px;
 }
 .collection__paragraph {
   font-size: 14px;
@@ -13384,7 +13406,7 @@ textarea.form-control-lg {
   font-style: normal;
   color: #6F6E6E;
   width: 51%;
-  margin: 0 293px;
+  margin: 0 370px;
   padding-top: 49px;
 }
 .collection__par-next {
@@ -13397,4 +13419,37 @@ textarea.form-control-lg {
   font-style: normal;
   color: #F16D7F;
   padding-top: 33px;
+  margin-left: 60px;
+}
+.collection__element {
+  width: 641px;
+  height: 1px;
+  background-color: #6F6E6E;
+  margin: 65px 360px;
+}
+.collection__selectors {
+  display: flex;
+  justify-content: center;
+}
+.collection__button {
+  border: 1px solid #F16D7F;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  color: #F16D7F;
+  margin: 60px 0 65px 60px;
+  padding: 15px 57px 15px 73px;
+  position: relative;
+  cursor: pointer;
+}
+.collection__button:before {
+  position: absolute;
+  content: "";
+  background-image: url(/img/Forma\ 1\ copy.svg);
+  width: 26px;
+  height: 24px;
+  top: 12px;
+  left: 25px;
 }/*# sourceMappingURL=style.css.map */
