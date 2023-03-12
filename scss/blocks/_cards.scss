@@ -1,0 +1,31 @@
+.cards {
+    margin-top: 130px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 31%;
+        min-height: 581px;
+        background-color: $light-grey;
+    }
+
+    &__img {
+        width: 100%;
+        min-height: 420px;
+    }
+
+    &__img--1 {
+        background-image: url(/img/offers-4.jpg);
+        background-size: cover;
+
+    }
+
+    &__title {
+        @include font(13px, 15px);
+        text-transform: uppercase;
+    }
+}

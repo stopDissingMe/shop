@@ -1,90 +1,86 @@
 .collection {
     width: 100%;
-    border: 1px solid $grey;
     min-height: 601px;
-    margin-top: -65px;
-    margin-bottom: 128px;
-    background-color: $white;
-    position: relative;
-    text-align: center;
+    border: 1px solid $bright-grey;
+
+    &__wrapper {
+        text-align: center;
+        padding-top: 65px;
+    }
 
     &__title {
-        @include font(14px, 17px, 300);
-        text-transform: uppercase;
+        @include font(14px, 19px, 300);
         color: $dark-pink;
-        padding-top: 65px;
+        text-transform: uppercase;
         position: relative;
-        margin-left: 60px;
 
         &:before {
             content: '';
-            background-color: $dark-pink;
+            position: absolute;
             width: 63px;
             height: 3px;
-            position: absolute;
-            bottom: -20px;
-            left: 50%;
-            transform: translate(-50%);
+            background-color: $dark-pink;
+            bottom: -15px;
+            left: 47.5%;
         }
     }
 
     &__subtitle {
         @include font(18px, 22px, 300);
-        color: $midnight-grey;
+        color: $bright-grey;
         text-transform: uppercase;
-        padding-top: 25px;
-        margin-left: 60px;
+        padding-top: 15px;
     }
 
-    &__paragraph {
+    &__par {
         @include font(14px, 17px, 300);
-        color: $midday-grey;
-        width: 51%;
-        margin: 0 370px;
-        padding-top: 49px;
+        color: $grey;
+        padding-top: 50px;
     }
 
-    &__par-next {
+    &__span {
         display: block;
     }
 
     &__price {
-        @include font(24px, 28px, 300);
+        @include font(24px, 29px, 300);
         color: $dark-pink;
         padding-top: 33px;
-        margin-left: 60px;
     }
 
-    &__element {
-        width: 641px;
-        height: 1px;
-        background-color: $midday-grey;
-        margin: 65px 360px;
+    &__selector {
+        border: none;
+        text-transform: uppercase;
+        @include font(14px, 17px,);
+        color: $midday-grey;
+        text-align: center;
     }
 
-    &__selectors {
-        display: flex;
-        justify-content: center;
+    &__selector-2 {
+        border: none;
+        text-transform: uppercase;
+        @include font(14px, 17px,);
+        color: $midday-grey;
+        margin: 130px 23px 0 23px;
+        text-align: center;
     }
 
     &__button {
         border: 1px solid $dark-pink;
         background-color: transparent;
-        @include font(16px, 19px);
         color: $dark-pink;
-        margin: 60px 0 65px 60px;
-        padding: 15px 57px 15px 73px;
+        padding: 15px 50px 15px 79px;
+        margin: 50px 0 65px 0;
         position: relative;
-        cursor: pointer;
 
         &:before {
-            position: absolute;
             content: '';
             background-image: url(/img/Forma\ 1\ copy.svg);
-            width: 26px;
-            height: 24px;
-            top: 12px;
+            position: absolute;
+            width: 25px;
+            height: 25px;
             left: 25px;
+            top: 15px;
         }
     }
 }
