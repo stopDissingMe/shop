@@ -13425,6 +13425,7 @@ textarea.form-control-lg {
 
 .cards {
   margin-top: 130px;
+  margin-bottom: 120px;
 }
 .cards__list {
   display: flex;
@@ -13442,7 +13443,21 @@ textarea.form-control-lg {
 }
 .cards__img--1 {
   background-image: url(/img/offers-4.jpg);
+  background-size: auto;
+  background-position: center;
+}
+.cards__img--2 {
+  background-image: url(/img/offers-3.jpg);
+  background-size: auto;
+  background-position: center;
+}
+.cards__img--3 {
+  background-image: url(/img/offers-6.jpg);
   background-size: cover;
+  background-position: center;
+}
+.cards__wrapper {
+  padding: 24px 30px 0 17px;
 }
 .cards__title {
   font-size: 13px;
@@ -13450,4 +13465,25 @@ textarea.form-control-lg {
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
+}
+.cards__title {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.cards__subtitle {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  color: #5D5D5D;
+}
+.cards__price {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  color: #F16D7F;
 }/*# sourceMappingURL=style.css.map */
