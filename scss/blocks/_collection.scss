@@ -1,7 +1,15 @@
 .collection {
-    width: 100%;
+    width: 82.5%;
     min-height: 601px;
     border: 1px solid $bright-grey;
+    margin-left: 138px;
+
+    @include tablet {
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        margin-left: 0;
+    }
 
     &__wrapper {
         text-align: center;
@@ -22,6 +30,10 @@
             background-color: $dark-pink;
             bottom: -15px;
             left: 47.5%;
+
+            @include tablet {
+                left: 46%;
+            }
         }
     }
 
@@ -36,10 +48,18 @@
         @include font(14px, 17px, 300);
         color: $grey;
         padding-top: 50px;
+
+        @include mobile {
+            padding: 0 10px;
+        }
     }
 
     &__span {
         display: block;
+
+        @include mobile {
+            display: contents
+        }
     }
 
     &__price {
@@ -63,6 +83,10 @@
         color: $midday-grey;
         margin: 130px 23px 0 23px;
         text-align: center;
+
+        @include mobile {
+            margin: 130px 0 0 0;
+        }
     }
 
     &__button {
