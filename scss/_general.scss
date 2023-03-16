@@ -28,6 +28,11 @@ body {
     color: $black;
     padding: 12px 20px;
     background-color: $bright-grey;
+
+    @include mobile {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
 }
 
 .fa-solid:hover {

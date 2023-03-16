@@ -6,17 +6,40 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column;
+            padding: 0 10px;
+        }
     }
 
     &__item {
         width: 31%;
         min-height: 581px;
         background-color: $light-grey;
+
+        @include tablet {
+            width: 49%;
+        }
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
+
+    &__item-none {
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &
 
     &__img {
         width: 100%;
         min-height: 420px;
+
     }
 
     &__img--1 {
